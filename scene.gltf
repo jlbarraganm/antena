@@ -3,24 +3,24 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 1600,
+      "count": 14844,
       "max": [
-        9.272480010986328,
-        38.180091857910156,
-        10.458992004394531
+        101.49654388427734,
+        74.95811462402344,
+        251.42092895507813
       ],
       "min": [
-        -8.168845176696777,
-        7.639457702636719,
-        -10.429427146911621
+        -101.49739837646484,
+        -125.204345703125,
+        -30.0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 19200,
+      "byteOffset": 178128,
       "componentType": 5126,
-      "count": 1600,
+      "count": 14844,
       "max": [
         1.0,
         1.0,
@@ -28,7 +28,7 @@
       ],
       "min": [
         -1.0,
-        -0.9775485396385193,
+        -1.0,
         -1.0
       ],
       "type": "VEC3"
@@ -36,53 +36,53 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 1600,
+      "count": 14844,
       "max": [
-        0.8566846251487732,
-        0.9184156060218811
+        0.0,
+        0.0
       ],
       "min": [
-        0.06986917555332184,
-        0.059119969606399536
+        0.0,
+        0.0
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 2340,
+      "count": 55086,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Matheus.Filipe (https://sketchfab.com/Matheus.Filipe)",
+      "author": "fundacionastromania (https://sketchfab.com/fundacionastromania)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/antena-dfc0e6e423b34c3f923124a1bf6aa1a8",
-      "title": "Antena"
+      "source": "https://sketchfab.com/3d-models/antena-observatorio-alma-99138553cd054735a0c4f1ef04a1f903",
+      "title": "Antena Observatorio ALMA"
     },
-    "generator": "Sketchfab-12.68.0",
+    "generator": "Sketchfab-15.86.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 9360,
+      "byteLength": 220344,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 12800,
-      "byteOffset": 9360,
+      "byteLength": 118752,
+      "byteOffset": 220344,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 38400,
-      "byteOffset": 22160,
+      "byteLength": 356256,
+      "byteOffset": 339096,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,26 +90,44 @@
   ],
   "buffers": [
     {
-      "byteLength": 60560,
+      "byteLength": 695352,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "images": [
     {
-      "uri": "textures/Material_baseColor.png"
+      "uri": "textures/default_diffuse.jpeg"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "Material",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0.7,
-        "roughnessFactor": 0.5
-      }
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.6262876229718033,
+            0.6262876229718033,
+            0.6262876229718033,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.6201923663005449,
+          "specularFactor": [
+            0.20571491265497188,
+            0.20571491265497188,
+            0.20571491265497188
+          ]
+        }
+      },
+      "name": "default"
     }
   ],
   "meshes": [
@@ -135,17 +153,17 @@
         1
       ],
       "matrix": [
-        1.0,
+        0.03030303120613098,
         0.0,
         0.0,
         0.0,
         0.0,
-        2.220446049250313e-16,
-        -1.0,
+        6.728624592196249e-18,
+        -0.03030303120613098,
         0.0,
         0.0,
-        1.0,
-        2.220446049250313e-16,
+        0.03030303120613098,
+        6.728624592196249e-18,
         0.0,
         0.0,
         0.0,
@@ -158,59 +176,11 @@
       "children": [
         2
       ],
-      "name": "root"
-    },
-    {
-      "children": [
-        3
-      ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        2.220446049250313e-16,
-        1.0,
-        0.0,
-        0.0,
-        -1.0,
-        2.220446049250313e-16,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "GLTF_SceneRootNode"
-    },
-    {
-      "children": [
-        4
-      ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        -7.510276794433594,
-        0.0,
-        1.0
-      ],
-      "name": "Antena sat��lite_2"
+      "name": "Alma-Antenna.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
-      "name": "Object_4"
+      "name": "Object_2"
     }
   ],
   "samplers": [
